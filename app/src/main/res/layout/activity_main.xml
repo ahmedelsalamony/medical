@@ -37,7 +37,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-
+                        android:background="@drawable/logo"
                         android:gravity="right" />
 
                     <TextView
@@ -60,123 +60,139 @@
                 android:id="@+id/activity_main"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
                 tools:context="com.example.ahmed.medical.MainActivity">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
-                        android:gravity="center">
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:id="@+id/text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+
+                                android:background="@drawable/circle"
+                                android:gravity="center"
+                                android:text="ادارة النظام"
+                                android:textColor="@color/text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:background="@drawable/circle"
+                                android:gravity="center"
+                                android:text="الادارة والاقسام"
+                                android:textColor="@color/text" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginRight="5dp"
+
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:id="@+id/text4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:background="@drawable/circle"
+
+                                android:gravity="center"
+                                android:text="ادارة الهدف"
+                                android:textColor="@color/text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginLeft="5dp"
+
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/text5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                android:background="@drawable/circle"
+                                android:gravity="center"
+                                android:text="عرض الاهداف"
+                                android:textColor="@color/text" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <TextView
 
-                            android:id="@+id/text1"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-
+                            android:id="@+id/text3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:background="@drawable/circle"
                             android:gravity="center"
-                            android:text="Hello World!" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="2dp"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/text2"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-
-                            android:background="@drawable/circle"
-                            android:gravity="center"
-                            android:text="Hello World!" />
+                            android:text="الشئون الادارية"
+                            android:textColor="@color/text" />
                     </LinearLayout>
 
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerInParent="true"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-
-                        android:id="@+id/text3"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/circle"
-                        android:gravity="center"
-                        android:text="Hello World!" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_alignParentBottom="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="2dp"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-
-                            android:id="@+id/text4"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-
-                            android:layout_gravity="center"
-                            android:background="@drawable/circle"
-                            android:gravity="center"
-                            android:text="Hello World!" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="2dp"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/text5"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-
-                            android:background="@drawable/circle"
-                            android:gravity="center"
-                            android:text="Hello World!" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
             </RelativeLayout>
-
-
         </LinearLayout>
 
 
@@ -201,6 +217,130 @@
 
             >
 
+
+
+
+            <TextView
+                android:id="@+id/main"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="right"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/homemain"
+                android:drawablePadding="10dp"
+                android:foregroundGravity="left|fill_vertical"
+
+                android:text="الادارة والاقسام"
+                android:textColor="@color/text"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/text"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/main1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="right"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/homemain"
+                android:drawablePadding="10dp"
+                android:foregroundGravity="left|fill_vertical"
+
+                android:text="ادارة النظام"
+                android:textColor="@color/text"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/text"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/main2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="right"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/homemain"
+                android:drawablePadding="10dp"
+                android:foregroundGravity="left|fill_vertical"
+
+                android:text="عرض الاهداف"
+                android:textColor="@color/text"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/text"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"></LinearLayout>
+            <TextView
+                android:id="@+id/main3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="right"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/homemain"
+                android:drawablePadding="10dp"
+                android:foregroundGravity="left|fill_vertical"
+
+                android:text="ادارة الهدف"
+                android:textColor="@color/text"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/main3line"
+                android:layout_width="match_parent"
+                android:background="@color/text"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/main4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="right"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/homemain"
+                android:drawablePadding="10dp"
+                android:foregroundGravity="left|fill_vertical"
+
+                android:text="الشئون الادارية"
+                android:textColor="@color/text"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/text"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"></LinearLayout>
 
         </LinearLayout>
     </android.support.design.widget.NavigationView>

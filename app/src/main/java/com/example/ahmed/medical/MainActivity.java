@@ -1,30 +1,35 @@
 package com.example.ahmed.medical;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
+import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
-import android.view.Display;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import static com.example.ahmed.medical.R.attr.height;
-import static com.example.ahmed.medical.R.id.top;
-import static java.lang.Math.min;
+import com.example.ahmed.medical.BlurImage.BlurBuilder;
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    Typeface typeface;
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        typeface = Typeface.createFromAsset(getAssets(), "fonts/DroidKufi-Bold.ttf");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -38,24 +43,58 @@ public class MainActivity extends AppCompatActivity {
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-        TextView t1=(TextView)findViewById(R.id.text1);
-        TextView t2=(TextView)findViewById(R.id.text2);
-        TextView t3=(TextView)findViewById(R.id.text3);
-        TextView t4=(TextView)findViewById(R.id.text4);
-        TextView t5=(TextView)findViewById(R.id.text5);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
 
+        TextView main = (TextView) navigationView.findViewById(R.id.main);
+        TextView main1 = (TextView) navigationView.findViewById(R.id.main1);
+        TextView main2 = (TextView) navigationView.findViewById(R.id.main2);
+        TextView main3 = (TextView) navigationView.findViewById(R.id.main3);
+        TextView main4 = (TextView) navigationView.findViewById(R.id.main4);
 
-        Display display =((WindowManager)getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        main.setTypeface(typeface);
+        main1.setTypeface(typeface);
+        main2.setTypeface(typeface);
+        main3.setTypeface(typeface);
+        main4.setTypeface(typeface);
+
+        TextView t1 = (TextView) findViewById(R.id.text1);
+        TextView t2 = (TextView) findViewById(R.id.text2);
+        TextView t3 = (TextView) findViewById(R.id.text3);
+        TextView t4 = (TextView) findViewById(R.id.text4);
+        TextView t5 = (TextView) findViewById(R.id.text5);
+        t1.setTypeface(typeface);
+        t2.setTypeface(typeface);
+        t3.setTypeface(typeface);
+        t4.setTypeface(typeface);
+        t5.setTypeface(typeface);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       /* Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         int width = display.getWidth();
-        int height=display.getHeight();
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(min((width-50)/2,(height-50)/3) , min((width-50)/2,(height-50)/3));
+        int height = display.getHeight();
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(min((int) Math.floor((width-40) / 2),(int) Math.floor((height-40) / 3)), min((int) Math.floor((width-40) / 2),(int) Math.floor((height-40) / 3)));
 
-        t1.setLayoutParams(layoutParams);
+       *//* t1.setLayoutParams(layoutParams);
         t2.setLayoutParams(layoutParams);
         t3.setLayoutParams(layoutParams);
         t4.setLayoutParams(layoutParams);
-        t5.setLayoutParams(layoutParams);
+        t5.setLayoutParams(layoutParams);*/
+/////////////////////////////////////////////////////////////////////////////////////////////////
+        //blur images
+      /* View view=findViewById(R.id.activity_main);
+        Bitmap bitmap = BitmapFactory.decodeResource(getApplication().getResources(), R.drawable.back);
 
 
+        Bitmap blurredBitmap = BlurBuilder.blur(getApplication(), bitmap );
+
+        view.setBackgroundDrawable( new BitmapDrawable( getResources(), blurredBitmap ) );*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return false;
     }
 }
