@@ -1,6 +1,7 @@
 package com.example.ahmed.medical;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
@@ -21,9 +22,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.ahmed.medical.BlurImage.BlurBuilder;
+import com.example.ahmed.medical.systemManagment.ActivityUsersControl;
 
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     Typeface typeface;
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
@@ -67,6 +69,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         t3.setTypeface(typeface);
         t4.setTypeface(typeface);
         t5.setTypeface(typeface);
+        t1.setOnClickListener(this);
+        t2.setOnClickListener(this);
+        t3.setOnClickListener(this);
+        t4.setOnClickListener(this);
+        t5.setOnClickListener(this);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
        /* Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         int width = display.getWidth();
@@ -90,11 +97,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent i;
+        switch (view.getId()) {
+
+            case R.id.text1:
+                i = new Intent(MainActivity.this, ActivityUsersControl.class);
+                startActivity(i);
+                break;
+            case R.id.text2:
+                i = new Intent(MainActivity.this, ActivityUsersControl.class);
+                startActivity(i);
+                break;
+
+            case R.id.text3:
+                i = new Intent(MainActivity.this, ActivityUsersControl.class);
+                startActivity(i);
+                break;
+            case R.id.text4:
+                i = new Intent(MainActivity.this, ActivityUsersControl.class);
+                startActivity(i);
+                break;
+            case R.id.text5:
+                i = new Intent(MainActivity.this, ActivityUsersControl.class);
+                startActivity(i);
+                break;
+        }
     }
 }

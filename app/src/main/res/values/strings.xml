@@ -2,7 +2,22 @@
     <string name="app_name">medical</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="name">الاسم</string>
+    <string name="entryname">اسم الدخول</string>
+    <string name="password">كلمة السر</string>
+    <string name="renterpassword">تاكيد كلمة السر </string>
+    <string name="type">فئة العضو </string>
+    <string name="manage">الادراة</string>
+    <string-array name="type_array">
+        <item>قم باختيار فئة العضو</item>
+        <item>مدير</item>
+        <item>رئيس قسم</item>
+        <item>موظف</item>
+    </string-array>
+    <string-array name="manage_array">
+        <item>قم باختيار الادارة</item>
+        <item>الادارة الاولى</item>
+        <item>الادارة الثانية</item>
+    </string-array>
 </resources>
