@@ -104,7 +104,7 @@
             android:id="@+id/btn_delete"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/button"
+
             android:text="حذف الاجراء"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
@@ -115,7 +115,7 @@
             android:id="@+id/btn_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/button"
+
             android:text="تعديل الاجراء"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
