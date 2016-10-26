@@ -22,6 +22,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.ahmed.medical.BlurImage.BlurBuilder;
+import com.example.ahmed.medical.systemManagment.ActivityControlPages;
 import com.example.ahmed.medical.systemManagment.ActivityUsersControl;
 
 
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(i);
                 break;
             case R.id.text2:
-                i = new Intent(MainActivity.this, ActivityUsersControl.class);
+                i = new Intent(MainActivity.this, ActivityControlPages.class);
                 startActivity(i);
                 break;
 

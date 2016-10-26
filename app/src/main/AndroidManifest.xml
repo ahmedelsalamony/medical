@@ -24,6 +24,10 @@
             android:name=".systemManagment.ActivityUsersControl"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MangmentAndDepartment.MangmentAndDepartment" />
+        <activity android:name=".systemManagment.ActivityControlPages"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
     </application>
 
 </manifest>

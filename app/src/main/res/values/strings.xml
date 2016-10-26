@@ -9,6 +9,9 @@
     <string name="renterpassword">تاكيد كلمة السر </string>
     <string name="type">فئة العضو </string>
     <string name="manage">الادراة</string>
+    <string name="groupname">اسم المجموعة</string>
+    <string name="groupsort">الترتيب</string>
+    <string name="groupplace">مكان المجموعة</string>
     <string-array name="type_array">
         <item>قم باختيار فئة العضو</item>
         <item>مدير</item>
@@ -19,5 +22,16 @@
         <item>قم باختيار الادارة</item>
         <item>الادارة الاولى</item>
         <item>الادارة الثانية</item>
+    </string-array>
+    <string-array name="location_array">
+        <item>اعلى</item>
+        <item>يمين</item>
+    </string-array>
+    <string-array name="grouppages_array">
+        <item>ادارة النظام</item>
+        <item>الادارات والاقسام</item>
+        <item>الشئون الادارية</item>
+        <item>ادارة الاهداف</item>
+        <item>عرض الاهداف</item>
     </string-array>
 </resources>
