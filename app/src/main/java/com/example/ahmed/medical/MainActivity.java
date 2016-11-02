@@ -22,7 +22,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.ahmed.medical.BlurImage.BlurBuilder;
-import com.example.ahmed.medical.systemManagment.ActivityControlPages;
+import com.example.ahmed.medical.EmployeeMangment.AddEmployee;
+import com.example.ahmed.medical.MangmentAndDepartment.AddDepartment.AddDepartment;
+import com.example.ahmed.medical.MangmentAndDepartment.MangmentAndDepartment;
 import com.example.ahmed.medical.systemManagment.ActivityUsersControl;
 
 
@@ -115,12 +117,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(i);
                 break;
             case R.id.text2:
-                i = new Intent(MainActivity.this, ActivityControlPages.class);
+                i = new Intent(MainActivity.this, MangmentAndDepartment.class);
                 startActivity(i);
                 break;
 
             case R.id.text3:
-                i = new Intent(MainActivity.this, ActivityUsersControl.class);
+                i = new Intent(MainActivity.this, AddEmployee.class);
                 startActivity(i);
                 break;
             case R.id.text4:
@@ -128,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(i);
                 break;
             case R.id.text5:
-                i = new Intent(MainActivity.this, ActivityUsersControl.class);
+                i = new Intent(MainActivity.this, AddDepartment.class);
                 startActivity(i);
                 break;
         }

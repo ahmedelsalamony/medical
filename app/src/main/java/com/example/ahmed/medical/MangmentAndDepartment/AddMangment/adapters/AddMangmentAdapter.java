@@ -1,4 +1,4 @@
-package com.example.ahmed.medical.MangmentAndDepartment.AddDepartment.adapters;
+package com.example.ahmed.medical.MangmentAndDepartment.AddMangment.adapters;
 
 /**
  * Created by ahmed on 10/20/2016.
@@ -13,23 +13,24 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 
+import com.example.ahmed.medical.MangmentAndDepartment.AddMangment.modles.AddMangmentControl;
 import com.example.ahmed.medical.R;
-import com.example.ahmed.medical.systemManagment.models.*;
+import com.example.ahmed.medical.systemManagment.models.disUserControl;
 
 import java.util.List;
 
-public class disUserControlAdapter extends RecyclerView.Adapter<disUserControlAdapter.MyViewHolder> {
+public class AddMangmentAdapter extends RecyclerView.Adapter<AddMangmentAdapter.MyViewHolder> {
 
-    private List<disUserControl> displayList;
+    private List<AddMangmentControl> displayList;
 
-    public disUserControlAdapter(List<disUserControl> displayList) {
+    public AddMangmentAdapter(List<AddMangmentControl> displayList) {
         this.displayList = displayList;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.dis_user_control_row, parent, false);
+                .inflate(R.layout.addmangmentrow, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -37,10 +38,9 @@ public class disUserControlAdapter extends RecyclerView.Adapter<disUserControlAd
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
-        disUserControl disUserControl = displayList.get(position);
-        holder.serial.setText(Integer.toString(disUserControl.getSerial()));
+        AddMangmentControl disUserControl = displayList.get(position);
+        holder.serial.setText((position+1)+"");
         holder.name.setText(disUserControl.getName());
-        holder.lastvist.setText(disUserControl.getLastvisit());
         holder.swt.setChecked(disUserControl.isActive());
         holder.swt.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -90,12 +90,11 @@ public class disUserControlAdapter extends RecyclerView.Adapter<disUserControlAd
 
         public MyViewHolder(View view) {
             super(view);
-            serial = (TextView) view.findViewById(R.id.txt_serial);
-            name = (TextView) view.findViewById(R.id.txt_name);
-            lastvist = (TextView) view.findViewById(R.id.txt_date);
-            swt = (SwitchCompat) view.findViewById(R.id.switchcompt);
-            btn_delete = (Button) view.findViewById(R.id.btn_delete);
-            btn_edit = (Button) view.findViewById(R.id.btn_edit);
+            serial = (TextView) view.findViewById(R.id.txt_serialDepName);
+            name = (TextView) view.findViewById(R.id.DepName);
+            swt = (SwitchCompat) view.findViewById(R.id.switchcomptMange);
+            btn_delete = (Button) view.findViewById(R.id.btn_deleteAddMangment);
+            btn_edit = (Button) view.findViewById(R.id.btn_editAddMangment);
 
         }
     }

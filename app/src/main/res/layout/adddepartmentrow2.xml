@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:paddingBottom="5dp"
+    android:orientation="horizontal">
+    <ImageButton
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_vertical|fill_horizontal"
+        android:background="@drawable/circle"
+        android:src="@drawable/edit"
+        android:foregroundGravity="center_vertical|center_horizontal" />
+    <ImageButton
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_vertical|fill_horizontal"
+        android:background="@drawable/circle"
+        android:src="@drawable/delet"
+        android:foregroundGravity="center_vertical|center_horizontal" />
+<TextView
+    android:layout_weight="1"
+    android:id="@+id/muldep"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ام جلانبو"
+    />
+
+</LinearLayout>

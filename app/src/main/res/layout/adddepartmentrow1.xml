@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rowrow"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_gravity="end"
+        android:textAlignment="textEnd"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/namedep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/namedepfix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الادارة الرئسية:"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight="1"
+            android:id="@+id/recycler_viewDisDep2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+        <TextView
+
+            android:id="@+id/departmentdepfix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الاقســــــام:"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

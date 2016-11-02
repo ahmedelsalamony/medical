@@ -68,6 +68,7 @@ public class ActivityUsersControl extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         setupTabIcons();
     }
 

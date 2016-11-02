@@ -10,6 +10,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".animation.SplashScreen"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,11 +20,20 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".systemManagment.ActivityUsersControl"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MangmentAndDepartment.MangmentAndDepartment" />
+        <activity
+            android:name=".MangmentAndDepartment.MangmentAndDepartment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MangmentAndDepartment.AddDepartment.AddDepartment" />
+        <activity android:name=".MangmentAndDepartment.AddMangment.AddMangment" />
+        <activity android:name=".MangmentAndDepartment.JobsName.JobsName" />
+        <activity android:name=".EmployeeMangment.AddEmployee"
+            android:theme="@style/AppTheme"></activity>
         <activity android:name=".systemManagment.ActivityControlPages"
             android:theme="@style/AppTheme.NoActionBar"
             >

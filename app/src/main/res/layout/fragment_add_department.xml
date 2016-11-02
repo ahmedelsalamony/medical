@@ -1,13 +1,181 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ahmed.medical.MangmentAndDepartment.AddDepartment.AddDepartment">
+    tools:context="com.example.ahmed.medical.MangmentAndDepartment.AddDepartment.Insert_AddDepart">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
 
-</FrameLayout>
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_margin="4dp"
+
+            android:id="@+id/MainManegment"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+
+            android:layout_margin="4dp"
+            android:id="@+id/DdpartNum"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/Dep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة الاولى"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Dep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة الثانية"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/input_layout_password3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Dep3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة الثالثة"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/input_layout_password4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Dep4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة الرابعة"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/input_layout_password5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Dep5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة الخامسة" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/input_layout_password6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Dep6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة السادسة"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/input_layout_password7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/Dep7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة السابعة"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/input_layout_password8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Dep8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة الثامنة" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/input_layout_password9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Dep9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة التاسعة"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/input_layout_password10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/Dep10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل اسم الادارة العاشرة" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+</ScrollView>
