@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="5dp"
+    tools:context="com.example.ahmed.medical.EmployeeMangment.AddEmployee">
+
+    <LinearLayout
+        android:id="@+id/activity_add_employee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="اليغاسليغالسغايل" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/black"
+            app:hintTextAppearance="@style/TextLabel"
+
+            >
+
+            <EditText
+                android:id="@+id/Nameemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اسم الموظف"
+                android:inputType="text"
+                android:padding="5dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatSpinner
+
+            android:id="@+id/kindemp"
+            style="@style/Widget.AppCompat.Spinner"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+
+            android:id="@+id/Mangeemp"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+
+            android:id="@+id/DepNameemp"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+
+            android:id="@+id/Workemp"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/decition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/folder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/folder"
+                android:text="اختر ملف التكليف"
+
+                />
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/folderfix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="قرار التكليف" />
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/black"
+            android:id="@+id/input2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/Idemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رقم الهوية"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/black"
+            android:id="@+id/input3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:background="@android:color/transparent"
+                android:id="@+id/Birthemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="4dp"
+                android:gravity="right"
+                android:focusable="false"
+                android:hint="تاريخ الميلاد"
+                android:inputType="date" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/black"
+            android:id="@+id/input4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/addemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="العنوان" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/black"
+            android:id="@+id/input5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/phoneemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الهاتف"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/black"
+            android:id="@+id/input6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/emailemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="البريد الالكترونى" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/black"
+            android:id="@+id/input7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/monyemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="المرتب"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/decition1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/folder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/folder"
+                android:text="اختر ملف الانهاء"
+
+                />
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/folderfix2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="قرار انهاء العمل" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/black"
+            android:id="@+id/input8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/Leaveemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="سبب ترك العمل"
+                android:inputType="text|textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="التامين الطبى" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/black"
+                    android:id="@+id/input9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginRight="4dp"
+                    >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:id="@+id/Medto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/calendar"
+                        android:drawablePadding="4dp"
+                        android:gravity="right"
+                        android:focusable="false"
+                        android:hint="الى"
+                        android:inputType="datetime" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginLeft="4dp"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/input10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextAppearance="@style/TextLabel"
+                   >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:id="@+id/Medfrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/calendar"
+                        android:drawablePadding="4dp"
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:hint="من"
+                        android:inputType="date" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="تأمين ترخيص مزاولة الخدمة" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/black"
+                    android:id="@+id/input11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginRight="4dp"
+
+                   >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:id="@+id/to2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/calendar"
+                        android:gravity="right"
+                        android:drawablePadding="4dp"
+                        android:focusable="false"
+                        android:hint="الى"
+                        android:inputType="datetime" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/black"
+                    android:id="@+id/input12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginLeft="4dp"
+
+                   >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:id="@+id/from2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/calendar"
+                        android:gravity="right"
+                        android:drawablePadding="4dp"
+                        android:focusable="false"
+                        android:hint="من"
+                        android:inputType="datetime" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/decition2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/folder3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/folder"
+                android:text="اختر ملف التامين"
+
+                />
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/folderfix3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="قرار التامين" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تامين مخاطر" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginRight="4dp"
+                    >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:id="@+id/to3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/calendar"
+                        android:drawablePadding="4dp"
+                        android:gravity="right"
+                        android:focusable="false"
+                        android:hint="الى"
+                        android:inputType="datetime" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginLeft="4dp"
+                  >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:id="@+id/from3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/calendar"
+                        android:gravity="right"
+                        android:drawablePadding="4dp"
+                        android:focusable="false"
+                        android:hint="من"
+                        android:inputType="datetime" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="بطاقة المهن الطبية" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginRight="4dp"
+                   >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:id="@+id/to4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/calendar"
+                        android:drawablePadding="4dp"
+                        android:gravity="right"
+                        android:focusable="false"
+                        android:hint="الى"
+                        android:inputType="datetime" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginLeft="4dp"
+                   >
+
+                    <EditText
+                        android:id="@+id/from4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/calendar"
+                        android:gravity="right"
+                        android:drawablePadding="4dp"
+                        android:focusable="false"
+                        android:hint="من"
+                        android:background="@android:color/transparent"
+                        android:inputType="datetime" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/decition4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/folder4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/folder"
+                android:text="عقد العمل"
+
+                />
+
+            <TextView
+                android:id="@+id/folderfix4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="اختر العقد" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

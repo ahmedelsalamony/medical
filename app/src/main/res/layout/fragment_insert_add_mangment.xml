@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmed.medical.MangmentAndDepartment.AddMangment.InsertAddMangment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_margin="4dp"
+           android:id="@+id/input_layout_password9"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+          >
+
+           <EditText
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="30dp"
+               android:id="@+id/MangName"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="اسم الادارة"/>
+
+
+       </android.support.design.widget.TextInputLayout>
+
+
+       <Button
+           android:id="@+id/btn_AddMangment"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+
+           android:text="اضافة ادارة"
+           android:textColor="@color/colorPrimary"
+           android:textStyle="bold"
+           android:layout_margin="4dp"
+           />
+
+
+   </LinearLayout>
+</FrameLayout>
