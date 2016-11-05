@@ -26,8 +26,8 @@ public class ActivityControlPages extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     public int[] tabIcons = {
-           R.drawable.pluscircle, R.drawable.eye,
-            R.drawable.pluscircle, R.drawable.eye,
+           R.drawable.delet, R.drawable.delet,
+            R.drawable.delet, R.drawable.delet,
     };
 
     @Override

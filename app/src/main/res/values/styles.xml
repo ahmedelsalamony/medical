@@ -13,7 +13,13 @@
         <item name="android:textColor">@color/black</item>
 
 
+
     </style>
+    <style name="Spinner" parent="Base.Widget.AppCompat.Spinner">
+        <item name="background">@color/colorPrimary</item>
+
+
+        </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

@@ -32,35 +32,14 @@ public class TypefaceUtil {
                 }
             } else if (v instanceof TextView) {
                 ((TextView) v).setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/DroidKufi-Bold.ttf"));
-                ((TextView) v).setTextColor(context.getResources().getColor(R.color.black));
-            }/*else if(v instanceof EditText){
+              //((TextView) v).setTextSize(18);
+            }else if(v instanceof EditText){
                 ((EditText) v).setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/DroidKufi-Bold.ttf"));
-                }*/
+                ((EditText) v).setTextColor(context.getResources().getColor(R.color.black));
+                }
 
         } catch (Exception e) {
         }
     }
 
-
-    public static void setTypefaceToInputLayout(final Context context,TextInputLayout inputLayout, String typeFace){
-
-        final Typeface tf = Typeface.createFromAsset(context.getAssets(), typeFace);
-
-        inputLayout.getEditText().setTypeface(tf);
-        try {
-            // Retrieve the CollapsingTextHelper Field
-            final Field collapsingTextHelperField = inputLayout.getClass().getDeclaredField("mCollapsingTextHelper");
-            collapsingTextHelperField.setAccessible(true);
-
-            // Retrieve an instance of CollapsingTextHelper and its TextPaint
-            final Object collapsingTextHelper = collapsingTextHelperField.get(inputLayout);
-            final Field tpf = collapsingTextHelper.getClass().getDeclaredField("mTextPaint");
-            tpf.setAccessible(true);
-
-            // Apply your Typeface to the CollapsingTextHelper TextPaint
-            ((TextPaint) tpf.get(collapsingTextHelper)).setTypeface(tf);
-        } catch (Exception ignored) {
-            // Nothing to do
-        }
-    }
 }
